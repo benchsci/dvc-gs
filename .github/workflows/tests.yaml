@@ -75,6 +75,7 @@ jobs:
         pip install --upgrade pip setuptools wheel
         pip install -e ".[tests]"
         pip install "dvc[testing]@git+https://github.com/iterative/dvc"
+        pip install "pytest-servers[all,tests]@git+https://github.com/iterative/pytest-servers@test-fix"
     - name: setup git
       run: |
         git config --global user.email "dvctester@example.com"
